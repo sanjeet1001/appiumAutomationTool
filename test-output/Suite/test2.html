@@ -1,0 +1,940 @@
+<html>
+<head>
+<title>TestNG:  test2</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>test2</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>9/8/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jun 07 18:18:44 IST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>642 seconds (642986 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='AppiumTest.ChangePassword()'><b>ChangePassword</b><br>Test class: AppiumTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for visibility of element located by By.id: com.pointedsquares.gamy5.android:id/profile_tab_name
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;DESKTOP-J07IHEV&apos;, ip: &apos;192.168.98.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.pointedsquares.gamy5.android, deviceName=FCAZFG001562WSZ, platform=LINUX, deviceUDID=FCAZFG001562WSZ, desired={app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, appPackage=com.pointedsquares.gamy5.android, appium-version=1.0, no-reset=true, full-reset=False, browserName=Android, platformName=Android, udid=FCAZFG001562WSZ, deviceName=FCAZFG001562WSZ}, appium-version=1.0, no-reset=true, platformVersion=6.0.1, webStorageEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, platformName=Android, udid=FCAZFG001562WSZ, deviceManufacturer=asus, app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.pointedsquares.gamy5.android, appWaitActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, databaseEnabled=false, appActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, locationContextEnabled=false, full-reset=False, deviceModel=ASUS_Z00XS}]
+Session ID: 9d2a07d5-3a6f-4532-b89e-0d398b07d738
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at basepage.waitForVisibilityOf(basepage.java:27)
+	at LoginPage.ChangePassword(LoginPage.java:181)
+	at AppiumTest.ChangePassword(AppiumTest.java:85)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 65 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;DESKTOP-J07IHEV&apos;, ip: &apos;192.168.98.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.pointedsquares.gamy5.android, deviceName=FCAZFG001562WSZ, platform=LINUX, deviceUDID=FCAZFG001562WSZ, desired={app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, appPackage=com.pointedsquares.gamy5.android, appium-version=1.0, no-reset=true, full-reset=False, browserName=Android, platformName=Android, udid=FCAZFG001562WSZ, deviceName=FCAZFG001562WSZ}, appium-version=1.0, no-reset=true, platformVersion=6.0.1, webStorageEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, platformName=Android, udid=FCAZFG001562WSZ, deviceManufacturer=asus, app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.pointedsquares.gamy5.android, appWaitActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, databaseEnabled=false, appActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, locationContextEnabled=false, full-reset=False, deviceModel=ASUS_Z00XS}]
+Session ID: 9d2a07d5-3a6f-4532-b89e-0d398b07d738
+*** Element info: {Using=id, value=com.pointedsquares.gamy5.android:id/profile_tab_name}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:27)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:399)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:47)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:215)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:809)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 23 more
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace533701611", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace533701611'><pre>org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for visibility of element located by By.id: com.pointedsquares.gamy5.android:id/profile_tab_name
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'DESKTOP-J07IHEV', ip: '192.168.98.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.pointedsquares.gamy5.android, deviceName=FCAZFG001562WSZ, platform=LINUX, deviceUDID=FCAZFG001562WSZ, desired={app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, appPackage=com.pointedsquares.gamy5.android, appium-version=1.0, no-reset=true, full-reset=False, browserName=Android, platformName=Android, udid=FCAZFG001562WSZ, deviceName=FCAZFG001562WSZ}, appium-version=1.0, no-reset=true, platformVersion=6.0.1, webStorageEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, platformName=Android, udid=FCAZFG001562WSZ, deviceManufacturer=asus, app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.pointedsquares.gamy5.android, appWaitActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, databaseEnabled=false, appActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, locationContextEnabled=false, full-reset=False, deviceModel=ASUS_Z00XS}]
+Session ID: 9d2a07d5-3a6f-4532-b89e-0d398b07d738
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at basepage.waitForVisibilityOf(basepage.java:27)
+	at LoginPage.ChangePassword(LoginPage.java:181)
+	at AppiumTest.ChangePassword(AppiumTest.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:36)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:165)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 65 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'DESKTOP-J07IHEV', ip: '192.168.98.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.pointedsquares.gamy5.android, deviceName=FCAZFG001562WSZ, platform=LINUX, deviceUDID=FCAZFG001562WSZ, desired={app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, appPackage=com.pointedsquares.gamy5.android, appium-version=1.0, no-reset=true, full-reset=False, browserName=Android, platformName=Android, udid=FCAZFG001562WSZ, deviceName=FCAZFG001562WSZ}, appium-version=1.0, no-reset=true, platformVersion=6.0.1, webStorageEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, platformName=Android, udid=FCAZFG001562WSZ, deviceManufacturer=asus, app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.pointedsquares.gamy5.android, appWaitActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, databaseEnabled=false, appActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, locationContextEnabled=false, full-reset=False, deviceModel=ASUS_Z00XS}]
+Session ID: 9d2a07d5-3a6f-4532-b89e-0d398b07d738
+*** Element info: {Using=id, value=com.pointedsquares.gamy5.android:id/profile_tab_name}
+	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:27)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:399)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:47)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:215)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:809)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 23 more
+</pre></div></td>
+<td>55</td>
+<td>AppiumTest@9629756</td></tr>
+<tr>
+<td title='AppiumTest.CompleteProfileAferRegistration()'><b>CompleteProfileAferRegistration</b><br>Test class: AppiumTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for visibility of element located by By.id: com.pointedsquares.gamy5.android:id/profile_tab_name
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;DESKTOP-J07IHEV&apos;, ip: &apos;192.168.98.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.pointedsquares.gamy5.android, deviceName=FCAZFG001562WSZ, platform=LINUX, deviceUDID=FCAZFG001562WSZ, desired={app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, appPackage=com.pointedsquares.gamy5.android, appium-version=1.0, no-reset=true, full-reset=False, browserName=Android, platformName=Android, udid=FCAZFG001562WSZ, deviceName=FCAZFG001562WSZ}, appium-version=1.0, no-reset=true, platformVersion=6.0.1, webStorageEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, platformName=Android, udid=FCAZFG001562WSZ, deviceManufacturer=asus, app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.pointedsquares.gamy5.android, appWaitActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, databaseEnabled=false, appActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, locationContextEnabled=false, full-reset=False, deviceModel=ASUS_Z00XS}]
+Session ID: 9d2a07d5-3a6f-4532-b89e-0d398b07d738
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at basepage.waitForVisibilityOf(basepage.java:27)
+	at LoginPage.CompleteProfileAferRegistration(LoginPage.java:207)
+	at AppiumTest.CompleteProfileAferRegistration(AppiumTest.java:90)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 106 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;DESKTOP-J07IHEV&apos;, ip: &apos;192.168.98.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.pointedsquares.gamy5.android, deviceName=FCAZFG001562WSZ, platform=LINUX, deviceUDID=FCAZFG001562WSZ, desired={app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, appPackage=com.pointedsquares.gamy5.android, appium-version=1.0, no-reset=true, full-reset=False, browserName=Android, platformName=Android, udid=FCAZFG001562WSZ, deviceName=FCAZFG001562WSZ}, appium-version=1.0, no-reset=true, platformVersion=6.0.1, webStorageEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, platformName=Android, udid=FCAZFG001562WSZ, deviceManufacturer=asus, app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.pointedsquares.gamy5.android, appWaitActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, databaseEnabled=false, appActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, locationContextEnabled=false, full-reset=False, deviceModel=ASUS_Z00XS}]
+Session ID: 9d2a07d5-3a6f-4532-b89e-0d398b07d738
+*** Element info: {Using=id, value=com.pointedsquares.gamy5.android:id/profile_tab_name}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:27)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:399)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:47)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:215)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:809)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 23 more
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2888547", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2888547'><pre>org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for visibility of element located by By.id: com.pointedsquares.gamy5.android:id/profile_tab_name
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'DESKTOP-J07IHEV', ip: '192.168.98.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.pointedsquares.gamy5.android, deviceName=FCAZFG001562WSZ, platform=LINUX, deviceUDID=FCAZFG001562WSZ, desired={app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, appPackage=com.pointedsquares.gamy5.android, appium-version=1.0, no-reset=true, full-reset=False, browserName=Android, platformName=Android, udid=FCAZFG001562WSZ, deviceName=FCAZFG001562WSZ}, appium-version=1.0, no-reset=true, platformVersion=6.0.1, webStorageEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, platformName=Android, udid=FCAZFG001562WSZ, deviceManufacturer=asus, app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.pointedsquares.gamy5.android, appWaitActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, databaseEnabled=false, appActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, locationContextEnabled=false, full-reset=False, deviceModel=ASUS_Z00XS}]
+Session ID: 9d2a07d5-3a6f-4532-b89e-0d398b07d738
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at basepage.waitForVisibilityOf(basepage.java:27)
+	at LoginPage.CompleteProfileAferRegistration(LoginPage.java:207)
+	at AppiumTest.CompleteProfileAferRegistration(AppiumTest.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:36)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:165)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 106 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'DESKTOP-J07IHEV', ip: '192.168.98.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.pointedsquares.gamy5.android, deviceName=FCAZFG001562WSZ, platform=LINUX, deviceUDID=FCAZFG001562WSZ, desired={app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, appPackage=com.pointedsquares.gamy5.android, appium-version=1.0, no-reset=true, full-reset=False, browserName=Android, platformName=Android, udid=FCAZFG001562WSZ, deviceName=FCAZFG001562WSZ}, appium-version=1.0, no-reset=true, platformVersion=6.0.1, webStorageEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, platformName=Android, udid=FCAZFG001562WSZ, deviceManufacturer=asus, app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.pointedsquares.gamy5.android, appWaitActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, databaseEnabled=false, appActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, locationContextEnabled=false, full-reset=False, deviceModel=ASUS_Z00XS}]
+Session ID: 9d2a07d5-3a6f-4532-b89e-0d398b07d738
+*** Element info: {Using=id, value=com.pointedsquares.gamy5.android:id/profile_tab_name}
+	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:27)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:399)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:47)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:215)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:809)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 23 more
+</pre></div></td>
+<td>56</td>
+<td>AppiumTest@9629756</td></tr>
+<tr>
+<td title='AppiumTest.EmptyNewPasswordInChangePasswordTab()'><b>EmptyNewPasswordInChangePasswordTab</b><br>Test class: AppiumTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for visibility of element located by By.id: com.pointedsquares.gamy5.android:id/profile_tab_name
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;DESKTOP-J07IHEV&apos;, ip: &apos;192.168.98.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.pointedsquares.gamy5.android, deviceName=FCAZFG001562WSZ, platform=LINUX, deviceUDID=FCAZFG001562WSZ, desired={app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, appPackage=com.pointedsquares.gamy5.android, appium-version=1.0, no-reset=true, full-reset=False, browserName=Android, platformName=Android, udid=FCAZFG001562WSZ, deviceName=FCAZFG001562WSZ}, appium-version=1.0, no-reset=true, platformVersion=6.0.1, webStorageEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, platformName=Android, udid=FCAZFG001562WSZ, deviceManufacturer=asus, app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.pointedsquares.gamy5.android, appWaitActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, databaseEnabled=false, appActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, locationContextEnabled=false, full-reset=False, deviceModel=ASUS_Z00XS}]
+Session ID: 9d2a07d5-3a6f-4532-b89e-0d398b07d738
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at basepage.waitForVisibilityOf(basepage.java:27)
+	at LoginPage.EmptyNewPasswordInChangePasswordTab(LoginPage.java:291)
+	at AppiumTest.EmptyNewPasswordInChangePasswordTab(AppiumTest.java:105)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 100 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;DESKTOP-J07IHEV&apos;, ip: &apos;192.168.98.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.pointedsquares.gamy5.android, deviceName=FCAZFG001562WSZ, platform=LINUX, deviceUDID=FCAZFG001562WSZ, desired={app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, appPackage=com.pointedsquares.gamy5.android, appium-version=1.0, no-reset=true, full-reset=False, browserName=Android, platformName=Android, udid=FCAZFG001562WSZ, deviceName=FCAZFG001562WSZ}, appium-version=1.0, no-reset=true, platformVersion=6.0.1, webStorageEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, platformName=Android, udid=FCAZFG001562WSZ, deviceManufacturer=asus, app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.pointedsquares.gamy5.android, appWaitActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, databaseEnabled=false, appActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, locationContextEnabled=false, full-reset=False, deviceModel=ASUS_Z00XS}]
+Session ID: 9d2a07d5-3a6f-4532-b89e-0d398b07d738
+*** Element info: {Using=id, value=com.pointedsquares.gamy5.android:id/profile_tab_name}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:27)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:399)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:47)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:215)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:809)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 23 more
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1495650859", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1495650859'><pre>org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for visibility of element located by By.id: com.pointedsquares.gamy5.android:id/profile_tab_name
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'DESKTOP-J07IHEV', ip: '192.168.98.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.pointedsquares.gamy5.android, deviceName=FCAZFG001562WSZ, platform=LINUX, deviceUDID=FCAZFG001562WSZ, desired={app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, appPackage=com.pointedsquares.gamy5.android, appium-version=1.0, no-reset=true, full-reset=False, browserName=Android, platformName=Android, udid=FCAZFG001562WSZ, deviceName=FCAZFG001562WSZ}, appium-version=1.0, no-reset=true, platformVersion=6.0.1, webStorageEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, platformName=Android, udid=FCAZFG001562WSZ, deviceManufacturer=asus, app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.pointedsquares.gamy5.android, appWaitActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, databaseEnabled=false, appActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, locationContextEnabled=false, full-reset=False, deviceModel=ASUS_Z00XS}]
+Session ID: 9d2a07d5-3a6f-4532-b89e-0d398b07d738
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at basepage.waitForVisibilityOf(basepage.java:27)
+	at LoginPage.EmptyNewPasswordInChangePasswordTab(LoginPage.java:291)
+	at AppiumTest.EmptyNewPasswordInChangePasswordTab(AppiumTest.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:36)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:165)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 100 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'DESKTOP-J07IHEV', ip: '192.168.98.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.pointedsquares.gamy5.android, deviceName=FCAZFG001562WSZ, platform=LINUX, deviceUDID=FCAZFG001562WSZ, desired={app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, appPackage=com.pointedsquares.gamy5.android, appium-version=1.0, no-reset=true, full-reset=False, browserName=Android, platformName=Android, udid=FCAZFG001562WSZ, deviceName=FCAZFG001562WSZ}, appium-version=1.0, no-reset=true, platformVersion=6.0.1, webStorageEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, platformName=Android, udid=FCAZFG001562WSZ, deviceManufacturer=asus, app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.pointedsquares.gamy5.android, appWaitActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, databaseEnabled=false, appActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, locationContextEnabled=false, full-reset=False, deviceModel=ASUS_Z00XS}]
+Session ID: 9d2a07d5-3a6f-4532-b89e-0d398b07d738
+*** Element info: {Using=id, value=com.pointedsquares.gamy5.android:id/profile_tab_name}
+	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:27)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:399)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:47)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:215)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:809)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 23 more
+</pre></div></td>
+<td>54</td>
+<td>AppiumTest@9629756</td></tr>
+<tr>
+<td title='AppiumTest.InvalidOldPasswordInChangePasswordTab()'><b>InvalidOldPasswordInChangePasswordTab</b><br>Test class: AppiumTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for visibility of element located by By.id: com.pointedsquares.gamy5.android:id/profile_tab_name
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;DESKTOP-J07IHEV&apos;, ip: &apos;192.168.98.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.pointedsquares.gamy5.android, deviceName=FCAZFG001562WSZ, platform=LINUX, deviceUDID=FCAZFG001562WSZ, desired={app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, appPackage=com.pointedsquares.gamy5.android, appium-version=1.0, no-reset=true, full-reset=False, browserName=Android, platformName=Android, udid=FCAZFG001562WSZ, deviceName=FCAZFG001562WSZ}, appium-version=1.0, no-reset=true, platformVersion=6.0.1, webStorageEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, platformName=Android, udid=FCAZFG001562WSZ, deviceManufacturer=asus, app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.pointedsquares.gamy5.android, appWaitActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, databaseEnabled=false, appActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, locationContextEnabled=false, full-reset=False, deviceModel=ASUS_Z00XS}]
+Session ID: 9d2a07d5-3a6f-4532-b89e-0d398b07d738
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at basepage.waitForVisibilityOf(basepage.java:27)
+	at LoginPage.InvalidOldPasswordInChangePasswordTab(LoginPage.java:243)
+	at AppiumTest.InvalidOldPasswordInChangePasswordTab(AppiumTest.java:95)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 29 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;DESKTOP-J07IHEV&apos;, ip: &apos;192.168.98.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.pointedsquares.gamy5.android, deviceName=FCAZFG001562WSZ, platform=LINUX, deviceUDID=FCAZFG001562WSZ, desired={app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, appPackage=com.pointedsquares.gamy5.android, appium-version=1.0, no-reset=true, full-reset=False, browserName=Android, platformName=Android, udid=FCAZFG001562WSZ, deviceName=FCAZFG001562WSZ}, appium-version=1.0, no-reset=true, platformVersion=6.0.1, webStorageEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, platformName=Android, udid=FCAZFG001562WSZ, deviceManufacturer=asus, app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.pointedsquares.gamy5.android, appWaitActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, databaseEnabled=false, appActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, locationContextEnabled=false, full-reset=False, deviceModel=ASUS_Z00XS}]
+Session ID: 9d2a07d5-3a6f-4532-b89e-0d398b07d738
+*** Element info: {Using=id, value=com.pointedsquares.gamy5.android:id/profile_tab_name}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:27)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:399)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:47)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:215)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:809)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 23 more
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace51957362", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace51957362'><pre>org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for visibility of element located by By.id: com.pointedsquares.gamy5.android:id/profile_tab_name
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'DESKTOP-J07IHEV', ip: '192.168.98.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.pointedsquares.gamy5.android, deviceName=FCAZFG001562WSZ, platform=LINUX, deviceUDID=FCAZFG001562WSZ, desired={app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, appPackage=com.pointedsquares.gamy5.android, appium-version=1.0, no-reset=true, full-reset=False, browserName=Android, platformName=Android, udid=FCAZFG001562WSZ, deviceName=FCAZFG001562WSZ}, appium-version=1.0, no-reset=true, platformVersion=6.0.1, webStorageEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, platformName=Android, udid=FCAZFG001562WSZ, deviceManufacturer=asus, app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.pointedsquares.gamy5.android, appWaitActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, databaseEnabled=false, appActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, locationContextEnabled=false, full-reset=False, deviceModel=ASUS_Z00XS}]
+Session ID: 9d2a07d5-3a6f-4532-b89e-0d398b07d738
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at basepage.waitForVisibilityOf(basepage.java:27)
+	at LoginPage.InvalidOldPasswordInChangePasswordTab(LoginPage.java:243)
+	at AppiumTest.InvalidOldPasswordInChangePasswordTab(AppiumTest.java:95)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:36)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:165)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 29 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'DESKTOP-J07IHEV', ip: '192.168.98.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.pointedsquares.gamy5.android, deviceName=FCAZFG001562WSZ, platform=LINUX, deviceUDID=FCAZFG001562WSZ, desired={app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, appPackage=com.pointedsquares.gamy5.android, appium-version=1.0, no-reset=true, full-reset=False, browserName=Android, platformName=Android, udid=FCAZFG001562WSZ, deviceName=FCAZFG001562WSZ}, appium-version=1.0, no-reset=true, platformVersion=6.0.1, webStorageEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, platformName=Android, udid=FCAZFG001562WSZ, deviceManufacturer=asus, app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.pointedsquares.gamy5.android, appWaitActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, databaseEnabled=false, appActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, locationContextEnabled=false, full-reset=False, deviceModel=ASUS_Z00XS}]
+Session ID: 9d2a07d5-3a6f-4532-b89e-0d398b07d738
+*** Element info: {Using=id, value=com.pointedsquares.gamy5.android:id/profile_tab_name}
+	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:27)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:399)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:47)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:215)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:809)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 23 more
+</pre></div></td>
+<td>55</td>
+<td>AppiumTest@9629756</td></tr>
+<tr>
+<td title='AppiumTest.JoinUsWithNewId()'><b>JoinUsWithNewId</b><br>Test class: AppiumTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 605 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;DESKTOP-J07IHEV&apos;, ip: &apos;192.168.98.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.pointedsquares.gamy5.android, deviceName=FCAZFG001562WSZ, platform=LINUX, deviceUDID=FCAZFG001562WSZ, desired={app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, appPackage=com.pointedsquares.gamy5.android, appium-version=1.0, no-reset=true, full-reset=False, browserName=Android, platformName=Android, udid=FCAZFG001562WSZ, deviceName=FCAZFG001562WSZ}, appium-version=1.0, no-reset=true, platformVersion=6.0.1, webStorageEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, platformName=Android, udid=FCAZFG001562WSZ, deviceManufacturer=asus, app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.pointedsquares.gamy5.android, appWaitActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, databaseEnabled=false, appActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, locationContextEnabled=false, full-reset=False, deviceModel=ASUS_Z00XS}]
+Session ID: 9d2a07d5-3a6f-4532-b89e-0d398b07d738
+*** Element info: {Using=id, value=com.pointedsquares.gamy5.android:id/register_button}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:27)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:399)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:47)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:215)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at LoginPage.JoinUsWithNewId(LoginPage.java:64)
+	at AppiumTest.JoinUsWithNewId(AppiumTest.java:55)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace538190950", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace538190950'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 605 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'DESKTOP-J07IHEV', ip: '192.168.98.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.pointedsquares.gamy5.android, deviceName=FCAZFG001562WSZ, platform=LINUX, deviceUDID=FCAZFG001562WSZ, desired={app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, appPackage=com.pointedsquares.gamy5.android, appium-version=1.0, no-reset=true, full-reset=False, browserName=Android, platformName=Android, udid=FCAZFG001562WSZ, deviceName=FCAZFG001562WSZ}, appium-version=1.0, no-reset=true, platformVersion=6.0.1, webStorageEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, platformName=Android, udid=FCAZFG001562WSZ, deviceManufacturer=asus, app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.pointedsquares.gamy5.android, appWaitActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, databaseEnabled=false, appActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, locationContextEnabled=false, full-reset=False, deviceModel=ASUS_Z00XS}]
+Session ID: 9d2a07d5-3a6f-4532-b89e-0d398b07d738
+*** Element info: {Using=id, value=com.pointedsquares.gamy5.android:id/register_button}
+	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:27)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:399)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:47)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:215)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at LoginPage.JoinUsWithNewId(LoginPage.java:64)
+	at AppiumTest.JoinUsWithNewId(AppiumTest.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:36)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:165)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>20</td>
+<td>AppiumTest@9629756</td></tr>
+<tr>
+<td title='AppiumTest.LoginAndLogout()'><b>LoginAndLogout</b><br>Test class: AppiumTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 590 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;DESKTOP-J07IHEV&apos;, ip: &apos;192.168.98.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.pointedsquares.gamy5.android, deviceName=FCAZFG001562WSZ, platform=LINUX, deviceUDID=FCAZFG001562WSZ, desired={app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, appPackage=com.pointedsquares.gamy5.android, appium-version=1.0, no-reset=true, full-reset=False, browserName=Android, platformName=Android, udid=FCAZFG001562WSZ, deviceName=FCAZFG001562WSZ}, appium-version=1.0, no-reset=true, platformVersion=6.0.1, webStorageEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, platformName=Android, udid=FCAZFG001562WSZ, deviceManufacturer=asus, app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.pointedsquares.gamy5.android, appWaitActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, databaseEnabled=false, appActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, locationContextEnabled=false, full-reset=False, deviceModel=ASUS_Z00XS}]
+Session ID: 9d2a07d5-3a6f-4532-b89e-0d398b07d738
+*** Element info: {Using=id, value=/sign_in_button}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:27)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:399)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:47)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:215)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at LoginPage.LoginAndLogout(LoginPage.java:79)
+	at AppiumTest.LoginAndLogout(AppiumTest.java:60)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace792056328", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace792056328'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 590 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'DESKTOP-J07IHEV', ip: '192.168.98.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.pointedsquares.gamy5.android, deviceName=FCAZFG001562WSZ, platform=LINUX, deviceUDID=FCAZFG001562WSZ, desired={app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, appPackage=com.pointedsquares.gamy5.android, appium-version=1.0, no-reset=true, full-reset=False, browserName=Android, platformName=Android, udid=FCAZFG001562WSZ, deviceName=FCAZFG001562WSZ}, appium-version=1.0, no-reset=true, platformVersion=6.0.1, webStorageEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, platformName=Android, udid=FCAZFG001562WSZ, deviceManufacturer=asus, app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.pointedsquares.gamy5.android, appWaitActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, databaseEnabled=false, appActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, locationContextEnabled=false, full-reset=False, deviceModel=ASUS_Z00XS}]
+Session ID: 9d2a07d5-3a6f-4532-b89e-0d398b07d738
+*** Element info: {Using=id, value=/sign_in_button}
+	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:27)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:399)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:47)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:215)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at LoginPage.LoginAndLogout(LoginPage.java:79)
+	at AppiumTest.LoginAndLogout(AppiumTest.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:36)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:165)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>22</td>
+<td>AppiumTest@9629756</td></tr>
+<tr>
+<td title='AppiumTest.SignUpwithRegisteredEmailID()'><b>SignUpwithRegisteredEmailID</b><br>Test class: AppiumTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 108 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;DESKTOP-J07IHEV&apos;, ip: &apos;192.168.98.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.pointedsquares.gamy5.android, deviceName=FCAZFG001562WSZ, platform=LINUX, deviceUDID=FCAZFG001562WSZ, desired={app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, appPackage=com.pointedsquares.gamy5.android, appium-version=1.0, no-reset=true, full-reset=False, browserName=Android, platformName=Android, udid=FCAZFG001562WSZ, deviceName=FCAZFG001562WSZ}, appium-version=1.0, no-reset=true, platformVersion=6.0.1, webStorageEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, platformName=Android, udid=FCAZFG001562WSZ, deviceManufacturer=asus, app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.pointedsquares.gamy5.android, appWaitActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, databaseEnabled=false, appActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, locationContextEnabled=false, full-reset=False, deviceModel=ASUS_Z00XS}]
+Session ID: 9d2a07d5-3a6f-4532-b89e-0d398b07d738
+*** Element info: {Using=xpath, value=android.widget.ImageView[@clickable=&apos;true&apos;][&apos;2&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:27)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:455)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:99)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at LoginPage.SignUpwithRegisteredEmailID(LoginPage.java:310)
+	at AppiumTest.SignUpwithRegisteredEmailID(AppiumTest.java:110)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace601820833", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace601820833'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 108 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'DESKTOP-J07IHEV', ip: '192.168.98.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.pointedsquares.gamy5.android, deviceName=FCAZFG001562WSZ, platform=LINUX, deviceUDID=FCAZFG001562WSZ, desired={app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, appPackage=com.pointedsquares.gamy5.android, appium-version=1.0, no-reset=true, full-reset=False, browserName=Android, platformName=Android, udid=FCAZFG001562WSZ, deviceName=FCAZFG001562WSZ}, appium-version=1.0, no-reset=true, platformVersion=6.0.1, webStorageEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, platformName=Android, udid=FCAZFG001562WSZ, deviceManufacturer=asus, app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.pointedsquares.gamy5.android, appWaitActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, databaseEnabled=false, appActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, locationContextEnabled=false, full-reset=False, deviceModel=ASUS_Z00XS}]
+Session ID: 9d2a07d5-3a6f-4532-b89e-0d398b07d738
+*** Element info: {Using=xpath, value=android.widget.ImageView[@clickable='true']['2']}
+	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:27)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:455)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:99)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at LoginPage.SignUpwithRegisteredEmailID(LoginPage.java:310)
+	at AppiumTest.SignUpwithRegisteredEmailID(AppiumTest.java:110)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:36)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:165)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>20</td>
+<td>AppiumTest@9629756</td></tr>
+<tr>
+<td title='AppiumTest.ViewTransactions()'><b>ViewTransactions</b><br>Test class: AppiumTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.19 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;DESKTOP-J07IHEV&apos;, ip: &apos;192.168.98.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.pointedsquares.gamy5.android, deviceName=FCAZFG001562WSZ, platform=LINUX, deviceUDID=FCAZFG001562WSZ, desired={app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, appPackage=com.pointedsquares.gamy5.android, appium-version=1.0, no-reset=true, full-reset=False, browserName=Android, platformName=Android, udid=FCAZFG001562WSZ, deviceName=FCAZFG001562WSZ}, appium-version=1.0, no-reset=true, platformVersion=6.0.1, webStorageEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, platformName=Android, udid=FCAZFG001562WSZ, deviceManufacturer=asus, app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.pointedsquares.gamy5.android, appWaitActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, databaseEnabled=false, appActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, locationContextEnabled=false, full-reset=False, deviceModel=ASUS_Z00XS}]
+Session ID: 9d2a07d5-3a6f-4532-b89e-0d398b07d738
+*** Element info: {Using=id, value=com.pointedsquares.gamy5.android:id/wallet_tab_name}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:27)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:399)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:47)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:215)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at LoginPage.ViewTransactions(LoginPage.java:347)
+	at AppiumTest.ViewTransactions(AppiumTest.java:125)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1809059033", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1809059033'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.19 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'DESKTOP-J07IHEV', ip: '192.168.98.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.pointedsquares.gamy5.android, deviceName=FCAZFG001562WSZ, platform=LINUX, deviceUDID=FCAZFG001562WSZ, desired={app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, appPackage=com.pointedsquares.gamy5.android, appium-version=1.0, no-reset=true, full-reset=False, browserName=Android, platformName=Android, udid=FCAZFG001562WSZ, deviceName=FCAZFG001562WSZ}, appium-version=1.0, no-reset=true, platformVersion=6.0.1, webStorageEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, platformName=Android, udid=FCAZFG001562WSZ, deviceManufacturer=asus, app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.pointedsquares.gamy5.android, appWaitActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, databaseEnabled=false, appActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, locationContextEnabled=false, full-reset=False, deviceModel=ASUS_Z00XS}]
+Session ID: 9d2a07d5-3a6f-4532-b89e-0d398b07d738
+*** Element info: {Using=id, value=com.pointedsquares.gamy5.android:id/wallet_tab_name}
+	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:27)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:399)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:47)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:215)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at LoginPage.ViewTransactions(LoginPage.java:347)
+	at AppiumTest.ViewTransactions(AppiumTest.java:125)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:36)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:165)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>24</td>
+<td>AppiumTest@9629756</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='AppiumTest.AddFavoriteFromFavoriteList()'><b>AddFavoriteFromFavoriteList</b><br>Test class: AppiumTest</td>
+<td></td>
+<td>31</td>
+<td>AppiumTest@9629756</td></tr>
+<tr>
+<td title='AppiumTest.EmptyOldPasswordInChangePasswordTab()'><b>EmptyOldPasswordInChangePasswordTab</b><br>Test class: AppiumTest</td>
+<td></td>
+<td>62</td>
+<td>AppiumTest@9629756</td></tr>
+<tr>
+<td title='AppiumTest.LoginWithEmptyPassword()'><b>LoginWithEmptyPassword</b><br>Test class: AppiumTest</td>
+<td></td>
+<td>22</td>
+<td>AppiumTest@9629756</td></tr>
+<tr>
+<td title='AppiumTest.LoginWithInvalidId()'><b>LoginWithInvalidId</b><br>Test class: AppiumTest</td>
+<td></td>
+<td>25</td>
+<td>AppiumTest@9629756</td></tr>
+<tr>
+<td title='AppiumTest.RemoveFavoriteFromFavoriteList()'><b>RemoveFavoriteFromFavoriteList</b><br>Test class: AppiumTest</td>
+<td></td>
+<td>31</td>
+<td>AppiumTest@9629756</td></tr>
+<tr>
+<td title='AppiumTest.SignUpPagetoSignInPage()'><b>SignUpPagetoSignInPage</b><br>Test class: AppiumTest</td>
+<td></td>
+<td>8</td>
+<td>AppiumTest@9629756</td></tr>
+<tr>
+<td title='AppiumTest.SignUpWithEmptyPassword()'><b>SignUpWithEmptyPassword</b><br>Test class: AppiumTest</td>
+<td></td>
+<td>23</td>
+<td>AppiumTest@9629756</td></tr>
+<tr>
+<td title='AppiumTest.loginWithCorrenctEmailId()'><b>loginWithCorrenctEmailId</b><br>Test class: AppiumTest</td>
+<td></td>
+<td>25</td>
+<td>AppiumTest@9629756</td></tr>
+<tr>
+<td title='AppiumTest.loginWithWrongEmailId()'><b>loginWithWrongEmailId</b><br>Test class: AppiumTest</td>
+<td></td>
+<td>25</td>
+<td>AppiumTest@9629756</td></tr>
+</table><p>
+</body>
+</html>

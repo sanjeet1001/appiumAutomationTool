@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="140805" started-at="2017-06-08T14:42:32Z" finished-at="2017-06-08T14:44:52Z">
+    <groups>
+    </groups>
+    <test name="test0" duration-ms="140805" started-at="2017-06-08T14:42:32Z" finished-at="2017-06-08T14:44:52Z">
+      <class name="AppiumTest">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)" name="setUp" is-config="true" duration-ms="13202" started-at="2017-06-08T14:42:32Z" finished-at="2017-06-08T14:42:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[c3e8ced89904]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5566]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="ProfileUpdate()" name="ProfileUpdate" duration-ms="72229" started-at="2017-06-08T14:42:45Z" finished-at="2017-06-08T14:43:57Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2017-06-08T14:43:57Z" finished-at="2017-06-08T14:43:57Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)" name="setUp" is-config="true" duration-ms="3274" started-at="2017-06-08T14:43:57Z" finished-at="2017-06-08T14:44:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[c3e8ced89904]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5566]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="ProfileUpdateWithEmptyName()" name="ProfileUpdateWithEmptyName" duration-ms="49575" started-at="2017-06-08T14:44:00Z" finished-at="2017-06-08T14:44:50Z">
+        </test-method>
+        <test-method status="PASS" signature="endDriver()" name="endDriver" is-config="true" duration-ms="2502" started-at="2017-06-08T14:44:50Z" finished-at="2017-06-08T14:44:52Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2017-06-08T14:44:50Z" finished-at="2017-06-08T14:44:50Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

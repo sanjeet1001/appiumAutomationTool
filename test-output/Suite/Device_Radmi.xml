@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="DESKTOP-J07IHEV" name="scenarios.AppiumTest" tests="1" failures="0" timestamp="30 May 2017 13:12:13 GMT" time="38.081" errors="0">
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="scenarios.AppiumTest">
+    <failure type="org.openqa.selenium.WebDriverException" message="An unknown server-side error occurred while processing the command. Original error: Device c3e8ced89904 was not in the list of connected devices (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.39 seconds
+Build info: version: &amp;apos;2.46.0&amp;apos;, revision: &amp;apos;61506a4624b13675f24581e453592342b7485d71&amp;apos;, time: &amp;apos;2015-06-04 10:22:50&amp;apos;
+System info: host: &amp;apos;DESKTOP-J07IHEV&amp;apos;, ip: &amp;apos;192.168.98.2&amp;apos;, os.name: &amp;apos;Windows 10&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;10.0&amp;apos;, java.version: &amp;apos;1.8.0_111&amp;apos;
+Driver info: io.appium.java_client.android.AndroidDriver">
+      <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Device c3e8ced89904 was not in the list of connected devices (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.39 seconds
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'DESKTOP-J07IHEV', ip: '192.168.98.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: io.appium.java_client.android.AndroidDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:27)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:128)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:155)
+	at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:22)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:202)
+	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:50)
+	at scenarios.androidsetup.prepareAndroidForAppium(androidsetup.java:22)
+	at scenarios.AppiumTest.setUp(AppiumTest.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 23 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="scenarios.AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="falseLoginTest" time="0.005" classname="scenarios.AppiumTest">
+    <skipped/>
+  </testcase>
+</testsuite>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="DESKTOP-J07IHEV" tests="2" failures="0" timestamp="8 Jun 2017 09:14:53 GMT" time="140.805" errors="0">
+  <testcase name="ProfileUpdate" time="72.229" classname="AppiumTest"/>
+  <testcase name="ProfileUpdateWithEmptyName" time="49.575" classname="AppiumTest"/>
+</testsuite>

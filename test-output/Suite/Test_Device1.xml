@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="DESKTOP-J07IHEV" name="scenarios.AppiumTest" tests="2" failures="1" timestamp="2 Jun 2017 10:35:30 GMT" time="330.031" errors="0">
+  <testcase name="loginWithCorrenctEmail" time="76.725" classname="scenarios.AppiumTest">
+    <failure type="org.openqa.selenium.NoSuchElementException" message="An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4.73 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &amp;apos;2.46.0&amp;apos;, revision: &amp;apos;61506a4624b13675f24581e453592342b7485d71&amp;apos;, time: &amp;apos;2015-06-04 10:22:50&amp;apos;
+System info: host: &amp;apos;DESKTOP-J07IHEV&amp;apos;, ip: &amp;apos;192.168.98.2&amp;apos;, os.name: &amp;apos;Windows 10&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;10.0&amp;apos;, java.version: &amp;apos;1.8.0_111&amp;apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, appPackage=com.pointedsquares.gamy5.android, deviceScreenSize=720x1280, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.pointedsquares.gamy5.android, appWaitActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, databaseEnabled=false, deviceName=emulator-5556, platform=LINUX, deviceUDID=emulator-5556, appActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, desired={app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, appPackage=com.pointedsquares.gamy5.android, appium-version=1.0, browserName=Android, platformName=Android, udid=emulator-5556, deviceName=emulator-5556}, appium-version=1.0, platformVersion=4.4.2, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, deviceModel=google_sdk, platformName=Android, udid=emulator-5556, deviceManufacturer=unknown}]
+Session ID: 6a33cdc0-b752-4556-84ad-4df31edd08ed
+*** Element info: {Using=id, value=com.pointedsquares.gamy5.android:id/sign_in_button}">
+      <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4.73 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'DESKTOP-J07IHEV', ip: '192.168.98.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, appPackage=com.pointedsquares.gamy5.android, deviceScreenSize=720x1280, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.pointedsquares.gamy5.android, appWaitActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, databaseEnabled=false, deviceName=emulator-5556, platform=LINUX, deviceUDID=emulator-5556, appActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, desired={app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, appPackage=com.pointedsquares.gamy5.android, appium-version=1.0, browserName=Android, platformName=Android, udid=emulator-5556, deviceName=emulator-5556}, appium-version=1.0, platformVersion=4.4.2, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, deviceModel=google_sdk, platformName=Android, udid=emulator-5556, deviceManufacturer=unknown}]
+Session ID: 6a33cdc0-b752-4556-84ad-4df31edd08ed
+*** Element info: {Using=id, value=com.pointedsquares.gamy5.android:id/sign_in_button}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:27)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:399)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:47)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:215)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at pages.LoginPage.loginWithCorrenctEmail(LoginPage.java:50)
+	at scenarios.AppiumTest.loginWithCorrenctEmail(AppiumTest.java:33)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="loginWithWrongEmail" time="66.56" classname="scenarios.AppiumTest"/>
+</testsuite>
