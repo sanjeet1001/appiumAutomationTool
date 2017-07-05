@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite hostname="DESKTOP-J07IHEV" tests="2" failures="0" timestamp="8 Jun 2017 09:04:55 GMT" time="0.056" errors="0">
+<testsuite hostname="DESKTOP-J07IHEV" tests="45" failures="0" timestamp="27 Jun 2017 06:17:22 GMT" time="1.098" errors="0">
   <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
     <failure type="org.testng.TestNGException" message="
 Parameter &amp;apos;DeviceId&amp;apos; is required by @Configuration on method setUp
-but has not been marked @Optional or defined in C:\Users\PS-Analyst-05\AppData\Local\Temp\testng-eclipse-1584094141\testng-customsuite.xml">
+but has not been marked @Optional or defined in C:\Users\PS-Analyst-05\AppData\Local\Temp\testng-eclipse-2014880155\testng-customsuite.xml">
       <![CDATA[org.testng.TestNGException: 
 Parameter 'DeviceId' is required by @Configuration on method setUp
-but has not been marked @Optional or defined in C:\Users\PS-Analyst-05\AppData\Local\Temp\testng-eclipse-1584094141\testng-customsuite.xml
+but has not been marked @Optional or defined in C:\Users\PS-Analyst-05\AppData\Local\Temp\testng-eclipse-2014880155\testng-customsuite.xml
 	at org.testng.internal.Parameters.createParameters(Parameters.java:144)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:342)
 	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:78)
@@ -43,13 +43,400 @@ but has not been marked @Optional or defined in C:\Users\PS-Analyst-05\AppData\L
   <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
     <skipped/>
   </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="AppiumTest">
+    <skipped/>
+  </testcase>
   <testcase name="@AfterClass endDriver" time="0.0" classname="AppiumTest">
     <skipped/>
   </testcase>
-  <testcase name="ProfileUpdate" time="0.007" classname="AppiumTest">
+  <testcase name="AddFavorite" time="0.015" classname="AppiumTest">
     <skipped/>
   </testcase>
-  <testcase name="ProfileUpdateWithEmptyName" time="0.001" classname="AppiumTest">
+  <testcase name="ChangePassword" time="0.002" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="CloseBtnOfRule_TC1006" time="0.003" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="CoinsCollection_TC1014" time="0.004" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="CompleteProfileAferRegistration" time="0.007" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="EmptyNewPasswordInChangePasswordTab" time="0.001" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="EmptyOldPasswordInChangePasswordTab" time="0.002" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="ExitFromTheTable_TC1031" time="0.013" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="ExitFromTheTable_TC1032" time="0.006" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="Exit_TC1027" time="0.002" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="Exit_TC1028" time="0.002" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="Exit_TC1029" time="0.005" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="Favorite_TC1002" time="0.002" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="Favorite_TC1003" time="0.004" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="Favorite_TC1004" time="0.002" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="InvalidOldPasswordInChangePasswordTab" time="0.002" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="InviteFriendFromFacebook" time="0.001" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="InviteFriendFromGmail" time="0.001" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="InviteFriendFromMessaging" time="0.001" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="JoinInMiddleOfTheGame_TC1009" time="0.001" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="JoinUsWithNewId" time="0.001" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="LoginAndLogout" time="0.001" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="LoginWithEmptyPassword" time="0.001" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="LoginWithInvalidId" time="0.001" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="Options_TC1017" time="0.002" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="PlayerJoin_TC1007" time="0.004" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="PlayerJoin_TC1008" time="0.001" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="ProfileUpdate" time="0.002" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="ProfileUpdateWithEmptyName" time="0.014" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="Questions_TC1016" time="0.001" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="RemoveFavorite" time="0.002" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="RuleOfTheGame_TC1005" time="0.001" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="SNGCheckAllCategory_TC1001" time="0.001" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="SignUpPagetoSignInPage" time="0.001" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="SignUpWithEmptyPassword" time="0.001" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="SignUpwithRegisteredEmailID" time="0.001" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="TourCheckAllCategory" time="0.001" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="TourSubjectCheck" time="0.002" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="VarifyForgotPassword_TC0022" time="0.001" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="VarifyForgotPassword_TC0023" time="0.002" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="VerifyRateTheApp_TC0034" time="0.001" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="VerifyWallet_TC0031" time="0.002" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="ViewTransactions" time="0.002" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="loginWithCorrenctEmailId" time="0.018" classname="AppiumTest">
+    <skipped/>
+  </testcase>
+  <testcase name="tournamentTab" time="0.009" classname="AppiumTest">
     <skipped/>
   </testcase>
 </testsuite>

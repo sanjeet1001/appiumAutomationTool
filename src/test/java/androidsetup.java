@@ -12,7 +12,6 @@ public class androidsetup {
 
     protected void prepareAndroidForAppium(String Device, String Port) throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
-
         capabilities.setCapability("no-reset", "true");
         capabilities.setCapability("full-reset", "False");
         capabilities.setCapability("browserName", "Android");

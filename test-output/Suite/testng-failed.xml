@@ -9,11 +9,8 @@
     <classes>
       <class name="AppiumTest">
         <methods>
-          <include name="ProfileUpdate"/>
+          <include name="RegisterToTournament"/>
           <include name="setUp"/>
-          <include name="endDriver"/>
-          <include name="ProfileUpdateWithEmptyName"/>
-          <include name="tearDown"/>
         </methods>
       </class>
     </classes>

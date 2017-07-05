@@ -5,8 +5,51 @@
     <classes>
       <class name="AppiumTest">
         <methods>
-          <include name="ProfileUpdate"/>
+          <include name="CompleteProfileAferRegistration"/>
+          <include name="Questions_TC1016"/>
+          <include name="VerifyRateTheApp_TC0034"/>
+          <include name="CloseBtnOfRule_TC1006"/>
+          <include name="ChangePassword"/>
+          <include name="Exit_TC1028"/>
+          <include name="SNGCheckAllCategory_TC1001"/>
+          <include name="loginWithCorrenctEmailId"/>
+          <include name="Exit_TC1027"/>
+          <include name="Exit_TC1029"/>
+          <include name="EmptyOldPasswordInChangePasswordTab"/>
+          <include name="JoinUsWithNewId"/>
+          <include name="RuleOfTheGame_TC1005"/>
+          <include name="ViewTransactions"/>
+          <include name="InviteFriendFromGmail"/>
+          <include name="LoginWithEmptyPassword"/>
+          <include name="VerifyWallet_TC0031"/>
+          <include name="tournamentTab"/>
+          <include name="Options_TC1017"/>
+          <include name="CoinsCollection_TC1014"/>
+          <include name="LoginWithInvalidId"/>
+          <include name="AddFavorite"/>
+          <include name="Favorite_TC1003"/>
+          <include name="Favorite_TC1002"/>
+          <include name="InvalidOldPasswordInChangePasswordTab"/>
+          <include name="InviteFriendFromMessaging"/>
+          <include name="InviteFriendFromFacebook"/>
           <include name="ProfileUpdateWithEmptyName"/>
+          <include name="TourSubjectCheck"/>
+          <include name="Favorite_TC1004"/>
+          <include name="SignUpWithEmptyPassword"/>
+          <include name="ExitFromTheTable_TC1032"/>
+          <include name="SignUpwithRegisteredEmailID"/>
+          <include name="ExitFromTheTable_TC1031"/>
+          <include name="PlayerJoin_TC1007"/>
+          <include name="ProfileUpdate"/>
+          <include name="VarifyForgotPassword_TC0023"/>
+          <include name="EmptyNewPasswordInChangePasswordTab"/>
+          <include name="VarifyForgotPassword_TC0022"/>
+          <include name="LoginAndLogout"/>
+          <include name="PlayerJoin_TC1008"/>
+          <include name="TourCheckAllCategory"/>
+          <include name="RemoveFavorite"/>
+          <include name="SignUpPagetoSignInPage"/>
+          <include name="JoinInMiddleOfTheGame_TC1009"/>
         </methods>
       </class>
     </classes>
