@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="75398" started-at="2017-07-05T11:08:04Z" finished-at="2017-07-05T11:09:19Z">
+  <suite name="Suite" duration-ms="72753" started-at="2017-07-05T11:12:35Z" finished-at="2017-07-05T11:13:48Z">
     <groups>
     </groups>
-    <test name="test0" duration-ms="75398" started-at="2017-07-05T11:08:04Z" finished-at="2017-07-05T11:09:19Z">
+    <test name="test0" duration-ms="72753" started-at="2017-07-05T11:12:35Z" finished-at="2017-07-05T11:13:48Z">
       <class name="AppiumTest">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)" name="setUp" is-config="true" duration-ms="16422" started-at="2017-07-05T11:08:04Z" finished-at="2017-07-05T11:08:20Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)" name="setUp" is-config="true" duration-ms="16515" started-at="2017-07-05T11:12:35Z" finished-at="2017-07-05T11:12:52Z">
           <params>
             <param index="0">
               <value>
@@ -21,11 +21,11 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="RegisterToTournament()" name="RegisterToTournament" duration-ms="56083" started-at="2017-07-05T11:08:20Z" finished-at="2017-07-05T11:09:16Z">
+        <test-method status="PASS" signature="RegisterToTournament()" name="RegisterToTournament" duration-ms="53679" started-at="2017-07-05T11:12:52Z" finished-at="2017-07-05T11:13:46Z">
         </test-method>
-        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="4" started-at="2017-07-05T11:09:16Z" finished-at="2017-07-05T11:09:16Z">
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="1" started-at="2017-07-05T11:13:46Z" finished-at="2017-07-05T11:13:46Z">
         </test-method>
-        <test-method status="PASS" signature="endDriver()" name="endDriver" is-config="true" duration-ms="2871" started-at="2017-07-05T11:09:16Z" finished-at="2017-07-05T11:09:19Z">
+        <test-method status="PASS" signature="endDriver()" name="endDriver" is-config="true" duration-ms="2535" started-at="2017-07-05T11:13:46Z" finished-at="2017-07-05T11:13:48Z">
         </test-method>
       </class>
     </test>
