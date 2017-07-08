@@ -157,7 +157,7 @@ public class AppiumTest extends androidsetup{
 	       new TournamentTestCases(driver).TourCheckAllCategory();
 	  }
     
-    @Test
+	  @Test
 	  public void TourSubjectCheck() throws InterruptedException {
     	  new TournamentTestCases(driver).TourSubjectCheck();
 	  }
@@ -178,8 +178,8 @@ public class AppiumTest extends androidsetup{
 	  }
 	  
 	  @Test
-	  public void trytomoveslider() throws InterruptedException {
-    	  new TournamentTestCases(driver).trytomoveslider();
+	  public void CountTournaments() throws InterruptedException {
+    	  new TournamentTestCases(driver).CountTournaments();
 	  }
 	  
 	  @Test

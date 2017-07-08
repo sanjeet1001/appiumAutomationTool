@@ -291,11 +291,7 @@ public class SNGTestCases extends basepage {
     	String coinsAfter = driver.findElement(By.id("com.pointedsquares.gamy5.android:id/free_coins")).getText().toString();
 
     	System.out.println(coinsAfter);
-    	boolean isCoinEqual = true;
-    	if(!coinsBefore.equals(coinsAfter)){
-    		isCoinEqual = false;
-    	}
-    	assertTrue(isCoinEqual , "Coins Not Found Same After Exiting From Message \"Finding room for you\"");
+    	assertTrue(coinsBefore.equals(coinsAfter) , "Coins Not Found Same After Exiting From Message \"Finding room for you\"");
     	Thread.sleep(7000);
     	return new SNGTestCases(driver);
     }
@@ -563,7 +559,9 @@ public class SNGTestCases extends basepage {
     	}catch(Exception ex){
     		driver.scrollTo("Academics");
     	}
-    	driver.findElement(By.xpath("//android.widget.TextView[contains(@text , 'Academics') and contains(@resource-id , 'itemTitle')]/following-sibling::android.widget.TextView[contains(@text , 'More')]")).click();
+    	driver.findElement(By.xpath("//android.widget.TextView[contains(@text , 'Academics')"
+    			+ " and contains(@resource-id , 'itemTitle')]/following-sibling:"
+    			+ ":android.widget.TextView[contains(@text , 'More')]")).click();
     	waitForElement(By.id("com.pointedsquares.gamy5.android:id/search_all"), 10);
     	driver.findElement(By.id("com.pointedsquares.gamy5.android:id/search_all")).click();
     	driver.findElement(By.id("com.pointedsquares.gamy5.android:id/search_all")).sendKeys(flavour);
@@ -576,9 +574,16 @@ public class SNGTestCases extends basepage {
     	waitForVisibilityOf(By.xpath("//android.widget.TextView[contains(@resource-id , 'response') and contains(@text , 'Finding room for you...')]"));
     	waitForVisibilityOf(By.xpath("//android.widget.TextView[contains(@resource-id , 'response') and contains(@text , 'Waiting for Players to Join.\nPlease wait 9 seconds, approximately.')]"));
     	waitForVisibilityOf(By.xpath("//android.widget.LinearLayout[contains(@resource-id , 'question_one_linear')]/android.webkit.WebView/android.webkit.WebView/android.view.View"));
-		String question = driver.findElement(By.xpath("//android.widget.LinearLayout[contains(@resource-id , 'question_one_linear')]/android.webkit.WebView/android.webkit.WebView/android.view.View")).getAttribute("name");
+    	Thread.sleep(3000);
+		//WebElement questionContainer = driver.findElement(By.xpath("//android.widget.LinearLayout[contains(@resource-id , 'question_one_linear')]/*"));
+    	
+    	while(true){
+    		break;
+    	}
+		String question = driver.findElement(By.xpath("//android.widget.LinearLayout[contains(@resource-id , 'question_one_linear')]/android.webkit.WebView/android.webkit.WebView/android.view.View")).getText();
 		System.out.println(question);
 		waitForElement(By.xpath("//android.widget.TextView[contains(@resource-id , 'timer_value')]"),40);
+		System.out.println(driver.findElement(By.xpath("//android.widget.TextView[contains(@resource-id , 'timer_value')]")).getText());
 //		NetworkConnectionSetting wifiOff = new NetworkConnectionSetting(false , false, false);
 //		wifiOff.setData(false);
 //		wifiOff.setWifi(false);

@@ -9,8 +9,10 @@
     <classes>
       <class name="AppiumTest">
         <methods>
-          <include name="RegisterToTournament"/>
           <include name="setUp"/>
+          <include name="endDriver"/>
+          <include name="tearDown"/>
+          <include name="ExitFromTheTable_TC1032"/>
         </methods>
       </class>
     </classes>

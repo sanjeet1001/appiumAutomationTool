@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="72753" started-at="2017-07-05T11:12:35Z" finished-at="2017-07-05T11:13:48Z">
+  <suite name="Suite" duration-ms="188464" started-at="2017-07-05T18:00:44Z" finished-at="2017-07-05T18:03:52Z">
     <groups>
     </groups>
-    <test name="test0" duration-ms="72753" started-at="2017-07-05T11:12:35Z" finished-at="2017-07-05T11:13:48Z">
+    <test name="test0" duration-ms="188464" started-at="2017-07-05T18:00:44Z" finished-at="2017-07-05T18:03:52Z">
       <class name="AppiumTest">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)" name="setUp" is-config="true" duration-ms="16515" started-at="2017-07-05T11:12:35Z" finished-at="2017-07-05T11:12:52Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)" name="setUp" is-config="true" duration-ms="23162" started-at="2017-07-05T18:00:44Z" finished-at="2017-07-05T18:01:07Z">
           <params>
             <param index="0">
               <value>
@@ -21,11 +21,77 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="RegisterToTournament()" name="RegisterToTournament" duration-ms="53679" started-at="2017-07-05T11:12:52Z" finished-at="2017-07-05T11:13:46Z">
+        <test-method status="FAIL" signature="ExitFromTheTable_TC1032()" name="ExitFromTheTable_TC1032" duration-ms="162030" started-at="2017-07-05T18:01:07Z" finished-at="2017-07-05T18:03:49Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 92 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'DESKTOP-J07IHEV', ip: '192.168.98.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.pointedsquares.gamy5.android, deviceName=c3e8ced89904, platform=LINUX, deviceUDID=c3e8ced89904, desired={app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, appPackage=com.pointedsquares.gamy5.android, appium-version=1.0, no-reset=true, full-reset=False, browserName=Android, platformName=Android, udid=c3e8ced89904, deviceName=c3e8ced89904}, appium-version=1.0, no-reset=true, platformVersion=6.0.1, webStorageEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, platformName=Android, udid=c3e8ced89904, deviceManufacturer=Xiaomi, app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.pointedsquares.gamy5.android, appWaitActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, databaseEnabled=false, appActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, locationContextEnabled=false, full-reset=False, deviceModel=Redmi Note 4}]
+Session ID: 0942542c-5042-43c0-85df-b2d2e04978e1
+*** Element info: {Using=xpath, value=//android.widget.TextView[contains(@resource-id , 'timer_value')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 92 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'DESKTOP-J07IHEV', ip: '192.168.98.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.pointedsquares.gamy5.android, deviceName=c3e8ced89904, platform=LINUX, deviceUDID=c3e8ced89904, desired={app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, appPackage=com.pointedsquares.gamy5.android, appium-version=1.0, no-reset=true, full-reset=False, browserName=Android, platformName=Android, udid=c3e8ced89904, deviceName=c3e8ced89904}, appium-version=1.0, no-reset=true, platformVersion=6.0.1, webStorageEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, platformName=Android, udid=c3e8ced89904, deviceManufacturer=Xiaomi, app=C:/Users/PS-Analyst-05/Desktop/app/app-debug.apk, deviceScreenSize=1080x1920, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.pointedsquares.gamy5.android, appWaitActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, databaseEnabled=false, appActivity=com.pointedsquares.gamy5.android.ui.activity.SplashActivity, locationContextEnabled=false, full-reset=False, deviceModel=Redmi Note 4}]
+Session ID: 0942542c-5042-43c0-85df-b2d2e04978e1
+*** Element info: {Using=xpath, value=//android.widget.TextView[contains(@resource-id , 'timer_value')]}
+	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:27)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:455)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:99)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at SNGTestCases.ExitFromTheTable_TC1032(SNGTestCases.java:582)
+	at AppiumTest.ExitFromTheTable_TC1032(AppiumTest.java:353)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:36)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:165)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception>
         </test-method>
-        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="1" started-at="2017-07-05T11:13:46Z" finished-at="2017-07-05T11:13:46Z">
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="1" started-at="2017-07-05T18:03:49Z" finished-at="2017-07-05T18:03:49Z">
         </test-method>
-        <test-method status="PASS" signature="endDriver()" name="endDriver" is-config="true" duration-ms="2535" started-at="2017-07-05T11:13:46Z" finished-at="2017-07-05T11:13:48Z">
+        <test-method status="PASS" signature="endDriver()" name="endDriver" is-config="true" duration-ms="3118" started-at="2017-07-05T18:03:49Z" finished-at="2017-07-05T18:03:52Z">
         </test-method>
       </class>
     </test>

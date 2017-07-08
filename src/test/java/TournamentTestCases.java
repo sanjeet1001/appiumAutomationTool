@@ -2,6 +2,7 @@ import static org.testng.Assert.assertTrue;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -89,9 +90,10 @@ public class TournamentTestCases extends basepage {
 		return new TournamentTestCases(driver);
 	}
     
-    //Successfully Register for a Tournament
+    //Successfully Register for all Tournament
     public TournamentTestCases RegisterToTournament() throws InterruptedException{
-    	ArrayList<String> tourList = new ArrayList();
+    	ArrayList<String> tourList = new ArrayList<String>();
+    	String currentTourName = "";
     	int x , y1 , y2;
     	float xStart, xEnd, yStart;
     	int endCheck = 0;
@@ -108,18 +110,22 @@ public class TournamentTestCases extends basepage {
         	assertTrue(false , "ERROR : No registered tournament found.");
         }
         while(true){
-        	if(!tourList.contains(driver.findElement(By.id(commonIdPath +"/flavor_name")).getText())){
+        	currentTourName = driver.findElement(By.id(commonIdPath +"/flavor_name")).getText();
+        	if(!tourList.contains(currentTourName)){
         		tourList.add(driver.findElement(By.id(commonIdPath +"/flavor_name")).getText());
         		endCheck = 0;
         		driver.findElement(By.id(commonIdPath +"/flavor_name")).click();
                 waitForElement(By.id(commonIdPath +"/type_btn") , 20);
                 String isRegister  = driver.findElement(By.id(commonIdPath +"/type_btn")).getText();
-                System.out.println("You are already registered with tournament " + tourList.get(tourList.size()-1));
                 if(isRegister.equals("REGISTER")){
                 	driver.findElement(By.id(commonIdPath +"/type_btn")).click();
                 	waitForElement(By.id(commonIdPath +"/type_btn") , 20);
                 	assertTrue((driver.findElement(By.id(commonIdPath +"/type_btn")).getText().equals( "UNREGISTER")) , "UNREGISTER BUTTON NOT FOUND");
+                	System.out.println("Successfully registered to " + tourList.get(tourList.size()-1));
                 	Thread.sleep(5000);
+                }
+                else{
+                	System.out.println("You are already registered with tournament " + tourList.get(tourList.size()-1));
                 }
                 
         	}
@@ -128,6 +134,7 @@ public class TournamentTestCases extends basepage {
         		if(endCheck == 2)
         		break;
         	}
+        	
         	driver.navigate().back();
         	waitForElement(By.id(commonIdPath +"/flavor_name") , 20);
         	x = driver.findElement(By.id(commonIdPath +"/flavor_name")).getSize().width;
@@ -136,7 +143,7 @@ public class TournamentTestCases extends basepage {
             y1 = driver.findElement(By.id(commonIdPath +"/flavor_name")).getLocation().getY();
             y2 = driver.findElement(By.id(commonIdPath +"/flavor_name")).getSize().height;
             yStart = ((float)(y1) + (float)(y2)) /2;
-            System.out.println("X star :" + xStart + " xEnd :" +xEnd+ " yStar : "+yStart);
+            //System.out.println("X star :" + xStart + " xEnd :" +xEnd+ " yStar : "+yStart);
             driver.swipe((int)(xStart), (int)(yStart), (int)(xEnd), (int)(yStart), 1000);
         }
 
@@ -218,7 +225,10 @@ public class TournamentTestCases extends basepage {
     }
     
     //Display List of Declared Tournaments
-    public TournamentTestCases trytomoveslider() throws InterruptedException{
+    public TournamentTestCases CountTournaments() throws InterruptedException{
+    	Scanner sc = new Scanner(System.in);
+    	System.out.print("Enter total number of tournament : ");
+    	int totalTour = sc.nextInt();
     	ArrayList<String> tourList = new ArrayList();
     	String tourName = "";
     	Login();
@@ -241,7 +251,7 @@ public class TournamentTestCases extends basepage {
             int y2 = driver.findElement(By.id(commonIdPath +"/flavor_name")).getSize().height;
             
             float yStart = ((float)(y1) + (float)(y2)) /2;
-            System.out.println("X star :" + xStart + " xEnd :" +xEnd+ " yStar : "+yStart);
+            //System.out.println("X star :" + xStart + " xEnd :" +xEnd+ " yStar : "+yStart);
             driver.swipe((int)(xStart), (int)(yStart), (int)(xEnd), (int)(yStart), 1000);
             if(!tourList.contains(tourName)){
             	tourList.add(tourName);
